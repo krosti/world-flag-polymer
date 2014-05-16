@@ -1,4 +1,4 @@
-# &lt;hello-world&gt;
+# &lt;world-flag&gt;
 
 > A Web Component example using [Polymer](http://www.polymer-project.org/).
 >
@@ -42,7 +42,8 @@ Or [download as ZIP](https://github.com/webcomponents/hello-world-polymer/archiv
 
 Attribute  | Options                   | Default             | Description
 ---        | ---                       | ---                 | ---
-`who`      | *string*                  | `World`             | Who do you want to say hello?
+`language`      | *string*                  | `en`             | Standard i18n short-name
+`icon`      | *boolean*                  | `true`             | Icon visibility
 
 ## Development
 

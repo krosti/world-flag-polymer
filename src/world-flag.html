@@ -1,0 +1,45 @@
+<!-- Import Polymer -->
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<!-- Define your custom element -->
+<polymer-element name="world-flag" attributes="language icon">
+
+    <template>
+        <style type="text/css">
+            .circle{
+                width: 50px;
+                height: 50px;
+                overflow: hidden;
+                border: 3px solid #fff;
+                z-index: 500;
+                background-color: #ddd;
+                -webkit-border-radius: 100%;
+                -moz-border-radius: 100%;
+                border-radius: 100%;
+                -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+                -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+                box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+                text-align: center;
+                vertical-align: middle;
+                color: #fff;
+                font-family: Helvetica, serif;
+                font-size: 1em;
+            }
+            img{
+              margin-top: -5px;
+              margin-left: -5px;
+            }
+        </style>
+        <div class="circle">
+          <img src="flags/{{language}}.png" width="60">
+            <p>{{language}}</p>
+        </div>
+    </template>
+
+    <script>
+        Polymer('world-flag', {
+            language: 'en'
+        });
+    </script>
+
+</polymer-element>

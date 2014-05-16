@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>&lt;world flag - web component&gt;</title>
+
+    <!-- Importing Web Component's Polyfill -->
+    <script src="bower_components/platform/platform.js"></script>
+
+    <!-- Importing Custom Elements -->
+    <link rel="import" href="src/world-flag.html">
+
+    <!-- Custom Styles -->
+    <style type="text/css">
+        @import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,300);
+        body{
+          font-family: 'Titillium Web', sans-serif;
+        }
+        h1{
+          font-size: 50px;
+          color: #1A323D;
+          text-align: center;
+          padding: 30px;
+        }
+        h3{
+          text-align: center;
+          font-weight: 300;
+          color: #1A323D;
+          padding-bottom: 50px;
+        }
+        .demo{ margin: auto; text-align: center; }
+        .demo world-flag{ width: 50px; display: block; margin:auto; padding: 20px; }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">World Flag Component</h1>
+    <h3>&lt;world-flag&gt;</h3>
+
+    <div class="demo">
+        <!-- Using Custom Elements -->
+        <span>Default</span>
+        <world-flag></world-flag>
+    </div>
+
+    <div class="demo">
+        <!-- Using Custom Elements -->
+        <span>With language attribute</span>
+        <world-flag language="es"></world-flag>
+    </div>
+
+    <div class="demo">
+        <!-- Using Custom Elements -->
+        <span>No icon</span>
+        <world-flag language="es_ar" icon="false" role="i18nLang"></world-flag>
+    </div>
+
+    <!-- credits for icons: http://www.deviantart.com/art/World-Flag-Icons-PNG-108083900 -->
+</body>
+</html>

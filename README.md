@@ -1,22 +1,21 @@
 # &lt;world-flag&gt;
 
-> A Web Component example using [Polymer](http://www.polymer-project.org/).
->
-> Looking for a boilerplate? Check [polymer-boilerplate](https://github.com/webcomponents/polymer-boilerplate).
+> Maintined by [Fernando Cea](http://github.com/krosti)
+
 
 ## Demo
 
-[Check it live!](http://webcomponents.github.io/hello-world-polymer)
+[Check it live!](http://webcomponents.github.io/world-flag-polymer)
 
 ## Install
 
 Install the component using [Bower](http://bower.io/):
 
 ```sh
-$ bower install hello-world-polymer --save
+$ bower install world-flag-polymer --save
 ```
 
-Or [download as ZIP](https://github.com/webcomponents/hello-world-polymer/archive/master.zip).
+Or [download as ZIP](https://github.com/webcomponents/world-flag-polymer/archive/master.zip).
 
 ## Usage
 
@@ -29,13 +28,13 @@ Or [download as ZIP](https://github.com/webcomponents/hello-world-polymer/archiv
 2. Import Custom Element:
 
     ```html
-    <link rel="import" href="bower_components/hello-world-polymer/dist/hello-world.html">
+    <link rel="import" href="bower_components/world-flag-polymer/dist/world-flag.html">
     ```
 
 3. Start using it!
 
     ```html
-    <hello-world></hello-world>
+    <world-flag></world-flag>
     ```
 
 ## Options
@@ -49,31 +48,33 @@ Attribute  | Options                   | Default             | Description
 
 In order to run it locally you'll need to fetch some dependencies and a basic server setup.
 
-1. Install [Bower](http://bower.io/) & [Grunt](http://gruntjs.com/):
+1. Install [Node](http://nodejs.org/)
+
+2. Install [Bower](http://bower.io/) & [Grunt](http://gruntjs.com/):
 
     ```sh
     $ [sudo] npm install -g bower grunt-cli
     ```
 
-2. Install local dependencies:
+3. Install local dependencies:
 
     ```sh
     $ bower install && npm install
     ```
 
-3. To test your project, start the development server and open `http://localhost:8000`.
+4. To test your project, start the development server and open `http://localhost:8000`.
 
     ```sh
     $ grunt server
     ```
 
-4. To build the distribution files before releasing a new version.
+5. To build the distribution files before releasing a new version.
 
     ```sh
     $ grunt build
     ```
 
-5. To provide a live demo, send everything to `gh-pages` branch.
+6. To provide a live demo, send everything to `gh-pages` branch.
 
     ```sh
     $ grunt deploy
@@ -89,8 +90,8 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
 
 ## History
 
-For detailed changelog, check [Releases](https://github.com/webcomponents/hello-world-polymer/releases).
+For detailed changelog, check [Releases](https://github.com/webcomponents/world-flag-polymer/releases).
 
 ## License
 
-[MIT License](http://webcomponentsorg.mit-license.org/) © WebComponents.org
+[MIT License](http://webcomponentsorg.mit-license.org/)

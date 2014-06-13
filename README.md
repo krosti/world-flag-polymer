@@ -1,5 +1,7 @@
 # &lt;world-flag&gt;
 
+Polymer component who aims standarize i18n information.
+
 > Maintined by [Fernando Cea](http://github.com/krosti)
 
 

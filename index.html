@@ -15,6 +15,7 @@
         @import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,300);
         body{
           font-family: 'Titillium Web', sans-serif;
+          font-size: 15px;
         }
         h1{
           font-size: 50px;
@@ -25,10 +26,19 @@
         h3{
           text-align: center;
           font-weight: 300;
+          font-size: 30px;
           color: #1A323D;
           padding-bottom: 50px;
         }
-        .demo{ margin: auto; text-align: center; }
+        span{
+            text-transform: lowercase;
+            font-weight: 400;
+            font-size: 1em;
+            float: left;
+            color: #999;
+        }
+        code{ background-color: #333; color: #EC2898; padding: 5px; border-radius: 5px; float:right; }
+        .demo{ margin: auto; text-align: center; border-bottom: 3px dotted #f2f2f2; padding-bottom: 50px; margin-bottom: 50px;  }
         .demo world-flag{ width: 50px; display: block; margin:auto; padding: 20px; }
     </style>
 </head>
@@ -38,20 +48,53 @@
 
     <div class="demo">
         <!-- Using Custom Elements -->
-        <span>Default</span>
+        <span>Default:</span>
         <world-flag></world-flag>
     </div>
 
     <div class="demo">
         <!-- Using Custom Elements -->
-        <span>With language attribute</span>
+        <span>Custom language:</span><code>language="es"</code>
         <world-flag language="es"></world-flag>
     </div>
 
     <div class="demo">
         <!-- Using Custom Elements -->
-        <span>No icon</span>
-        <world-flag language="es_ar" icon="false" role="i18nLang"></world-flag>
+        <span>Modes:</span><code>language="es_ar" <br> icon="false"</code>
+        <world-flag language="es_ar" icon="true"></world-flag>
+    </div>
+
+    <div class="demo">
+        <!-- Using Custom Elements -->
+        <span>Sizes:</span>
+
+        <code>size="small"</code>
+        <world-flag language="pt_br" size="small"></world-flag>
+
+        <code>size="medium"</code>
+        <world-flag language="pt_br" size="medium"></world-flag>
+
+        <code>default</code>
+        <world-flag language="pt_br"></world-flag>
+
+        <code>size="large"</code>
+        <world-flag language="pt_br" size="large"></world-flag>
+    </div>
+
+    <div class="demo">
+        <!-- Using Custom Elements -->
+        <span>Style:</span>
+        <code>type="normal"</code>
+        <world-flag language="en_gb" type="normal"></world-flag>
+
+        <code>default</code>
+        <world-flag language="en_gb"></world-flag>
+
+        <!--
+        <code>list</code>
+        <world-flag language="en_gb" type="list"></world-flag>
+        -->
+
     </div>
 
     <!-- credits for icons: http://www.deviantart.com/art/World-Flag-Icons-PNG-108083900 -->

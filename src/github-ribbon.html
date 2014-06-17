@@ -1,0 +1,49 @@
+<polymer-element name="github-ribbon" attributes="position color user repo hex pos">
+  <template id="github-ribbon">
+    <style>
+      .github-ribbon-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 0;
+      }
+
+      .github-ribbon-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 0;
+      }
+    </style>
+
+    <a href="https://github.com/{{user}}/{{repo}}">
+      <img class="{{pos}}" src="https://s3.amazonaws.com/github/ribbons/forkme_{{position}}_{{color}}_{{hex}}.png" alt="Fork me on GitHub">
+    </a>
+  </template>
+  <script>
+    Polymer('github-ribbon', {
+      position: 'right',
+      color: 'red',
+      user: 'sabarasaba',
+      repo: 'github-ribbon',
+
+      hex: 'aa0000',
+      pos: 'github-ribbon-right',
+
+      ready: function() {
+        var colors = {
+          red: 'aa0000',
+          green: '007200',
+          black: '121621',
+          orange: 'ff7600',
+          gray: '6d6d6d',
+          white: 'ffffff'
+        };
+
+        this.pos = (this.position === 'right') ? 'github-ribbon-right' : 'github-ribbon-left';
+
+        this.hex = colors[this.color];
+      }
+    });
+  </script>
+</polymer-element>

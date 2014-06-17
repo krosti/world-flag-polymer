@@ -10,19 +10,24 @@
 
     <!-- Importing Custom Elements -->
     <link rel="import" href="src/world-flag.html">
+    <link rel="import" href="src/github-card.html">
+    <link rel="import" href="src/github-ribbon.html">
 
     <!-- Custom Styles -->
     <style type="text/css">
         @import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,300);
         body{
           font-family: 'Titillium Web', sans-serif;
-          font-size: 15px;
+          font-size: 1rem;
+          width:60%;
+          margin:auto;
         }
         h1{
           font-size: 50px;
           color: #1A323D;
           text-align: center;
-          padding: 30px;
+          padding: 30px 30px 0px 30px;
+          margin-bottom: 0;
         }
         h3{
           text-align: center;
@@ -30,6 +35,7 @@
           font-size: 30px;
           color: #1A323D;
           padding-bottom: 50px;
+          margin-top: 0px;
         }
         span{
             text-transform: lowercase;
@@ -39,12 +45,16 @@
             color: #999;
         }
         code{ background-color: #333; color: #EC2898; padding: 5px; border-radius: 5px; float:right; }
+        footer{
+          width: 265px;
+          margin: auto;
+        }
         .demo{ margin: auto; text-align: center; border-bottom: 3px dotted #f2f2f2; padding-bottom: 50px; margin-bottom: 50px;  }
         .demo world-flag{ width: 50px; display: block; margin:auto; padding: 20px; }
     </style>
 </head>
 <body>
-    <h1 style="text-align: center;">World Flag Component</h1>
+    <h1>World Flag Component</h1>
     <h3>&lt;world-flag&gt;</h3>
 
     <div class="demo">
@@ -62,7 +72,10 @@
     <div class="demo">
         <!-- Using Custom Elements -->
         <span>Modes:</span><code>language="es_ar" <br> icon="false"</code>
-        <world-flag language="es_ar" icon="true"></world-flag>
+        <world-flag language="es_ar" icon="false"></world-flag>
+
+        <code>language="es_ar"</code>
+        <world-flag language="es_ar"></world-flag>
     </div>
 
     <div class="demo">
@@ -99,5 +112,13 @@
     </div>
 
     <!-- credits for icons: http://www.deviantart.com/art/World-Flag-Icons-PNG-108083900 -->
+
+    <github-ribbon user="krosti" repo="world-flag-polymer" color="gray" position="right"></github-ribbon>
+    <footer>
+        <p>Contact me: ceafernando@gmail.com</p>
+        <p>Follow me: <a href="http://twitter.com/krosti">Twitter</a></p>
+        <github-card user="krosti"><github-card>
+    </footer>
+
 </body>
 </html>

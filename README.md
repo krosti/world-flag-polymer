@@ -8,7 +8,7 @@ Polymer component who aims standarize i18n information.
 
 ## Demo
 
-[Check it live!](http://webcomponents.github.io/world-flag-polymer)
+[Check it live!](http://krosti.github.io/world-flag-polymer/)
 
 ## Install
 

@@ -41,10 +41,12 @@ Or [download as ZIP](https://github.com/webcomponents/world-flag-polymer/archive
 
 ## Options
 
-Attribute  | Options                   | Default             | Description
----        | ---                       | ---                 | ---
-`language`      | *string*                  | `en`             | Standard i18n short-name
-`icon`      | *boolean*                  | `true`             | Icon visibility
+Attribute           | Options                           | Default               | Description
+---                 | ---                               | ---                   | ---
+`language`          | *string*                          | `en`                  | Standard i18n short-name
+`icon`              | *boolean*                         | `true`                | Icon visibility
+`size`              | *string* 'small, medium, large'   | `''`                  | Icon size
+`type`              | *boolean*                         | `''`                  | Icon display style
 
 ## Development
 
@@ -96,4 +98,7 @@ For detailed changelog, check [Releases](https://github.com/webcomponents/world-
 
 ## License
 
-[MIT License](http://webcomponentsorg.mit-license.org/)
+[MIT License](http://webcomponentsorg.mit-license.org/) -
+
+[@krosti](http://twitter.com/krosti)
+[LinkedIn](http://ar.linkedin.com/in/fernandocea/)

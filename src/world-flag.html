@@ -1,0 +1,79 @@
+<!-- Import Polymer -->
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<!-- Define your custom element -->
+<polymer-element name="world-flag" attributes="language icon size type">
+
+    <template>
+        <style type="text/css">
+            .circle{
+                width: 50px;
+                height: 50px;
+                overflow: hidden;
+                border: 3px solid #fff;
+                z-index: 500;
+                background-color: #ddd;
+                -webkit-border-radius: 100%;
+                -moz-border-radius: 100%;
+                border-radius: 100%;
+                -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+                -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+                box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+                text-align: center;
+                vertical-align: middle;
+                color: #fff;
+                font-family: Helvetica, serif;
+                font-size: 1em;
+            }
+            .circle.small{ width: 20px; height: 20px;}
+            .circle.medium{ width: 40px; height: 40px; }
+            .circle.large{ width: 80px; height: 80px; }
+            .list{
+                width: 30px;
+                height: 30px;
+                overflow: hidden;
+                border: 3px solid #fff;
+                text-align: center;
+                vertical-align: middle;
+            }
+            img{
+              margin-top: -5px;
+              margin-left: -5px;
+            }
+        </style>
+        <div class="{{type || 'circle'}} {{size}}" role="i18nLang">
+            <img id="icon" src="flags/{{language}}.png" width="{{setImgSize}}" />
+            <p>{{language}}</p>
+        </div>
+    </template>
+
+    <script>
+        Polymer('world-flag', {
+            language: 'en',
+            ready: function(){
+                this.setImgSize = this.setSize();
+                this.setIcon();
+            },
+            setIcon: function(){
+                if(this.icon){ this.$.icon.remove(); }
+            },
+            setSize: function(){
+                var size;
+                switch(this.size){
+                    case 'small':
+                        size = 30;
+                        break;
+                    case 'medium':
+                        size = 50;
+                        break;
+                    case 'large':
+                        size = 90;
+                        break;
+                    default: size = 60;
+                }
+                return size;
+            }
+        });
+    </script>
+
+</polymer-element>

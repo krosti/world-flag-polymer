@@ -3,7 +3,8 @@
 Polymer component who aims standarize i18n information.
 
 > Maintined by [Fernando Cea](http://github.com/krosti)
-
+> [@krosti](http://twitter.com/krosti)
+> [LinkedIn](http://ar.linkedin.com/in/fernandocea/)
 
 ## Demo
 
@@ -99,6 +100,3 @@ For detailed changelog, check [Releases](https://github.com/webcomponents/world-
 ## License
 
 [MIT License](http://webcomponentsorg.mit-license.org/) -
-
-[@krosti](http://twitter.com/krosti)
-[LinkedIn](http://ar.linkedin.com/in/fernandocea/)

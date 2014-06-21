@@ -1,12 +1,11 @@
 {
-    "name": "hello-world-polymer",
-    "version": "0.1.1",
-    "description": "Web Component example using Polymer",
+    "name": "world-flag-polymer",
+    "version": "0.1",
+    "description": "Polymer web component which shows i18n flags",
     "authors": [
-        "WebComponents.org"
+        "Fernando Cea"
     ],
-    "license": "MIT",
-    "main": "dist/hello-world.html",
+    "main": "dist/world-flag.html",
     "keywords": [
         "polymer",
         "web-components"

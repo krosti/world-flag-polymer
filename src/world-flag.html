@@ -2,7 +2,7 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 
 <!-- Define your custom element -->
-<polymer-element name="world-flag" attributes="language icon size type">
+<polymer-element name="world-flag" attributes="language languageLong icon size type">
 
     <template>
         <style type="text/css">
@@ -42,7 +42,7 @@
             }
         </style>
         <div class="{{type || 'circle'}} {{size}}" role="i18nLang">
-            <img id="icon" src="flags/{{language}}.png" width="{{setImgSize}}" />
+            <img id="icon" src="flags/{{language}}.png" width="{{setImgSize}}" alt="{{languageLong}}" />
             <p>{{language}}</p>
         </div>
     </template>
@@ -50,12 +50,13 @@
     <script>
         Polymer('world-flag', {
             language: 'en',
+            languageLong: 'English',
             ready: function(){
                 this.setImgSize = this.setSize();
                 this.setIcon();
             },
             setIcon: function(){
-                if(this.icon){ this.$.icon.remove(); }
+                if(this.icon === 'false'){ this.$.icon.remove(); }
             },
             setSize: function(){
                 var size;

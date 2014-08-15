@@ -45,6 +45,7 @@ Or [download as ZIP](https://github.com/webcomponents/world-flag-polymer/archive
 Attribute           | Options                           | Default               | Description
 ---                 | ---                               | ---                   | ---
 `language`          | *string*                          | `en`                  | Standard i18n short-name
+`languageLong`      | *string*                          | `English`             | Long, human readable name of the language
 `icon`              | *boolean*                         | `true`                | Icon visibility
 `size`              | *string* 'small, medium, large'   | `''`                  | Icon size
 `type`              | *boolean*                         | `''`                  | Icon display style

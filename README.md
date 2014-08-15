@@ -6,6 +6,8 @@ Polymer component who aims standarize i18n information.
 > [@krosti](http://twitter.com/krosti)
 > [LinkedIn](http://ar.linkedin.com/in/fernandocea/)
 
+> Contributors: [Karl Groves](https://github.com/karlgroves)
+
 ## Demo
 
 [Check it live!](http://krosti.github.io/world-flag-polymer/)
